@@ -1,0 +1,60 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    text-align: center;
+    font-size: 300%;
+}
+
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    margin: auto;
+    padding: 20px;
+    background: #5e191d;
+    color: #fff;
+    max-width: 800px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.music {
+  text-align: center;
+}
+
+#container2 {
+display: grid; /* keep */
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, auto);
+}
+
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 20px;
+        padding: 10px;
+      }
+      #container2 {
+      margin: auto; /* keep */
+      display: grid; /* keep */
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, auto);
+      }
+      img {
+        margin: 5px;
+      }
+    }
